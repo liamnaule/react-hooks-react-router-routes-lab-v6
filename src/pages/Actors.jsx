@@ -12,7 +12,7 @@ function Actors() {
         return res.json();
       })
       .then(data => {
-        console.log('Actors data:', data); // Debug: Inspect data
+        console.log('Actors data:', data); 
         if (!Array.isArray(data)) throw new Error('Expected an array of actors');
         setActors(data);
       })

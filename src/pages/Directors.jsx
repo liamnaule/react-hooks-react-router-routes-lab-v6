@@ -12,7 +12,7 @@ function Directors() {
         return res.json();
       })
       .then(data => {
-        console.log('Directors data:', data); // Debug: Inspect data
+        console.log('Directors data:', data); 
         if (!Array.isArray(data)) throw new Error('Expected an array of directors');
         setDirectors(data);
       })

@@ -13,7 +13,7 @@ function Home() {
         return res.json();
       })
       .then(data => {
-        console.log('Movies data:', data); // Debug: Inspect data
+        console.log('Movies data:', data); 
         if (!Array.isArray(data)) throw new Error('Expected an array of movies');
         setMovies(data);
       })
